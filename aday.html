@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<style type="text/css">
+
+
+/* CONTAINER
+----------------------------- */
+
+/*Container override*/
+
+.content>.content-wrap>.grid-container,
+.grid-container.custom-width {
+    max-width: 100%;
+    padding: 0
+}
+
+.content>.content-wrap,
+.content>.content-wrap>.grid-container>.grid-default {
+    padding: 0
+}
+
+@media screen and (max-width: 767px) {
+    .content>.content-wrap>.gift-cards {
+        padding:0;
+    }
+} 
+
+
+/* TEMPLATE SETTINGS
+----------------------------- */
+
+
+.template_aday article:first-child {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .template_aday article:first-child {
+        margin-top: 25px;
+    }
+}
+
+.template_aday article {
+    margin: 75px 0;
+}
+
+.template_aday p {
+    font-family: "FuturaPTMedium-Reg", sans-serif;
+    text-transform: none;
+}
+
+@media screen and (max-width: 768px) {
+    .template_aday article {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .template_aday article {
+        margin: 25px 0;
+        padding: 0;
+    }
+}      
+
+/* COMPONENTS
+----------------------------- */
+
+
+h2.jet {
+    color: #000
+}
+
+h2.milk {
+    color: #fff
+}
+button.ghost {
+    background: transparent;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "FuturaPTMedium-Reg", sans-serif;
+    font-weight: 400!important;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    min-width: 205px;
+    text-align: center;
+    margin: auto;
+    outline: none
+}
+button.bg-solid {
+    background: #eee2d1!important
+}
+@media screen and (min-width: 1921px) {
+    button.ghost {
+        font-size: 21px;
+        line-height: 21px;
+        min-width: 340px;
+        padding: 20px
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    button.ghost {
+        min-width: 180px
+    }
+}
+@media screen and (max-width: 767px) {
+    button.ghost {
+        display: block;
+        line-height: 36px;
+        min-width: 95%
+    }
+}
+button.ghost-jet {
+    color: #000;
+    border: 2px solid #000
+}
+button.ghost-milk {
+    color: #fff;
+    border: 2px solid #fff
+}
+
+button.ghost-electric {
+    color: #fff;
+    border: 2px solid #242acc;
+    background: #242acc!important
+}
+
+/*LAYOUT SETTINGS 
+----------------------------- */
+
+
+.layer:after,
+.layer:before {
+    content: " ";
+    display: table
+}
+.layer:after {
+    clear: both
+}
+.layer {
+    margin-left: -11px;
+    margin-right: -11px
+}
+.mob-btn-layer {
+    margin-top: 12.5px;
+    margin-bottom: 25px
+}
+.mob-combo-layer {
+    margin-top: 12.5px;
+    margin-bottom: 25px;
+    margin-left: 40px
+}
+.all-combo-layer {
+    margin-top: 12.5px;
+    margin-bottom: 25px;
+    margin-left: 0
+}
+.mob-combo-layer a,
+.all-combo-layer a {
+    font-size: 16px;
+    text-decoration: underline
+}
+@media screen and (min-width: 1921px) {
+    .mob-combo-layer a,
+    .all-combo-layer a {
+        font-size: 22px
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .mob-combo-layer a,
+    .all-combo-layer a {
+        font-size: 17px
+    }
+}
+.mob-btn-layer,
+.mob-combo-layer {
+    padding: 0 11px
+}
+.beam {
+    position: relative;
+    min-height: 1px
+}
+@media screen and (max-width: 768px) {
+    .beam {
+        padding-left: 11px;
+        padding-right: 11px;
+        margin-bottom: 50px
+    }
+}
+@media screen and (max-width: 767px) {
+    .beam {
+        padding: 0;
+        margin-bottom: 0
+    }
+}     
+
+/* MODULE RESPONSIVE
+----------------------------- */
+
+    .mod-ady-ed1, .mod-ady-ed2, .mod-ady-ed3, .mod-ady-ed4, .mod-ady-ed5, .mod-ady-ed6 {
+        position: relative;
+    }
+
+    article.mod-ady-ed1 {
+        clear: both;
+    }
+
+    .mod-ady-ed1 .mod-ady-lg {
+        margin-left: 16.66666667%;
+    }
+    @media screen and (max-width: 768px) {
+         .mod-ady-ed1 .mod-ady-lg {
+            margin-left: 8.33333333%;
+        }
+   }
+
+   .mod-ady-ed2 .mod-ady-md {
+        margin-left: 8.33333333%;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-ady-ed2 .mod-ady-md {
+             margin-left: 4.16666667%;
+        }
+   }
+   @media screen and (max-width: 767px) {
+        .mod-ady-ed2 .mod-ady-md {
+             margin-left: 0;
+        }
+   }
+
+   .mod-ady-ed3 .mod-ady-lg {
+        margin-left: 25%;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-ady-ed3 .mod-ady-lg {
+             margin-left: 20.83333333%;
+        }
+   }
+   @media screen and (max-width: 767px) {
+        .mod-ady-ed3 .mod-ady-lg {
+             margin-left:16.66666667%
+        }
+   }
+
+    .mod-ady-ed4 .mod-ady-sml {
+        margin-left: 16.66666667%;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-ady-ed4 .mod-ady-sml {
+             margin-left: 0;
+        }
+   }
+   @media screen and (max-width: 767px) {
+        .mod-ady-ed4 .mod-ady-sml {
+             margin-left: 0;
+        }
+        .mob-flex {
+            margin-left: 27%;
+            margin-top: -108%;
+        }
+        .cmp-text-non {
+            margin-top: 30rem!important;
+        }
+   }
+
+   .mod-ady-ed5 .mod-ady-xl {
+        margin-left: 25%;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-ady-ed5 .mod-ady-xl {
+             margin-left: 4.16666667%;
+        }
+   }
+   @media screen and (max-width: 767px) {
+        .mod-ady-ed5 .mod-ady-xl {
+             margin-left: 0;
+        }
+   }
+
+   .mod-ady-ed6 .mod-ady-lg {
+        margin-left: 45.83333333%
+    }
+    @media screen and (max-width: 768px) {
+        .mod-ady-ed6 .mod-ady-lg {
+             margin-left: 33.33333333%;
+        }
+   }
+   @media screen and (max-width: 767px) {
+        .mod-ady-ed6 .mod-ady-lg {
+             margin-left: 23.33333333%;
+        }
+   }
+
+   .mod-ady-blog .mod-blog {
+        margin-left: 4.16666667%;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-ady-blog .mod-blog {
+            margin-left: 12.5%;
+        }
+    }
+
+    .mod-blog-copy {
+        margin-left: 8.33333333%;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-blog-copy {
+        margin-left: 12.5%;
+    }
+    }
+    @media screen and (max-width: 767px) {
+        .mod-blog-copy {
+        margin-left: 0;
+    }
+    }
+
+
+
+   /* ===============  
+    Mod-Header-Tier
+    =============== */
+    
+    .mod-header-tier {
+        width: 100%;
+        float: left;
+    }
+    .mod-header-tier section {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .mod-header-tier img {
+        width: 20%;
+        margin: auto
+    }
+    
+    @media screen and (max-width: 768px) {
+        .mod-header-tier img {
+            width:25%;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .mod-header-tier img {
+            width:45%;
+        }
+    }
+    
+    .mod-header-tier p {
+        font-size: 28px;
+        line-height: normal;
+        width:55%;
+        margin: auto;
+        text-align: center;
+        padding-top: 1.5rem; 
+        padding-bottom: 3.5rem;
+    }
+    @media screen and (max-width: 1024px) {
+        .mod-header-tier p {
+            width:85%;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .mod-header-tier p {
+            width:80%;
+        }
+    }    
+    @media screen and (max-width: 767px) {
+        .mod-header-tier p {
+            width:75%;
+            padding-top:2rem;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .mod-header-tier p {
+            width:90%;
+        }
+    }
+    
+    /* ===============  
+    Mod-Ady-Xl
+    =============== */
+    
+    .mod-ady-xl {
+        width: 58.33333333%;
+        float:left;
+    }
+    @media screen and (max-width: 768px) {
+           .mod-ady-xl {
+            width: 70.83333333%
+        } 
+    }
+    @media screen and (max-width: 767px) {
+           .mod-ady-xl {
+            width: 83.33333333%
+        } 
+    }     
+
+    /* ===============  
+    Mod-Ady-Lg
+    =============== */
+    
+    .mod-ady-lg {
+        width: 50%;
+        float:left;
+    }
+    @media screen and (max-width: 768px) {
+           .mod-ady-lg {
+            width: 62.5%;
+        } 
+    }
+    @media screen and (max-width: 767px) {
+           .mod-ady-lg {
+            width: 75%;
+        } 
+    }
+    
+    /* ===============  
+    Mod-Ady-Mg
+    =============== */
+    
+    .mod-ady-md {
+        width: 41.66666667%;
+        float:left;
+    }
+    @media screen and (max-width: 768px) {
+           .mod-ady-md {
+            width: 50%;
+        } 
+    }
+    @media screen and (max-width: 767px) {
+           .mod-ady-md {
+            width: 70.83333333%;
+        } 
+    }
+
+    /* ===============  
+    Mod-Ady-Sml
+    =============== */
+    
+    .mod-ady-sml {
+        width: 37.5%;
+        float:left;
+    }
+    @media screen and (max-width: 768px) {
+           .mod-ady-sml {
+            width: 45.83333333%
+        } 
+    }
+    @media screen and (max-width: 767px) {
+           .mod-ady-sml {
+            width: 66.66666667%;
+        } 
+    }
+
+    /* ===============  
+    Mod-Ady-Blog
+    =============== */
+
+    .mod-ady-blog {}
+
+    .mod-blog {
+        width: 41.66666667%;
+        float: left;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-blog {
+            width: 75%
+        }
+    }
+
+    .mod-ady-blog  {
+        padding-top: 75px!important;
+    }
+    @media screen and (max-width: 767px) {
+        .mod-ady-blog  {
+            padding-top: 45%!important;
+    }
+
+    }
+    .mod-ady-blog section {
+        background-color: #eeedf6;    
+    }
+    .mod-ady-blog section > div {
+        margin-top: -3%;
+        margin-bottom: -3%;
+    }
+    @media screen and (max-width: 767px) {
+        .mod-ady-blog section > div {
+
+            margin-bottom: 5%;
+    }
+    }
+
+    .mod-blog-copy {
+        width: 37.5%;
+        float: left;
+        font-family: "FuturaPTMedium-Reg", sans-serif;
+    }
+    @media screen and (max-width: 768px) {
+         .mod-blog-copy {
+            width: 75%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+         .mod-blog-copy {
+            width: 100%;
+        }
+    }
+
+
+    .mod-blog-copy div {
+        text-align: center;
+        margin-top: 20%;
+    }
+    @media screen and (max-width: 768px) {
+        .mod-blog-copy div {
+            margin-top: 15%;
+    }
+    }
+    @media screen and (max-width: 767px) {
+        .mod-blog-copy div {
+            margin-top: 5%;
+    }
+    }
+
+    .mod-blog-copy h3 {
+        font-size: 2.55vw;
+        line-height: normal;
+        text-transform: none;
+    }
+
+     @media screen and (max-width: 768px) {
+        .mod-blog-copy h3 {
+            font-size: 25px;
+        }
+     }
+     @media screen and (max-width: 767px) {
+        .mod-blog-copy h3 {
+            font-size: 20px;
+        }
+     }
+
+     .mod-blog-copy p {
+        font-size: 1.2vw;
+        line-height: normal;
+        margin-bottom: 5%;
+    }
+    @media screen and (max-width: 1024px) {
+        .mod-blog-copy p {
+            font-size: 16px;
+        }
+    }
+    
+
+    /* ===============  
+    Offset/Inset/
+    =============== */
+    
+    .overset-mod-1 {
+        left: 4.16666667%;
+        z-index: 1;
+    }
+     @media screen and (max-width: 767px) {
+         .overset-mod-1 {
+            left: 0;
+            top: 220px;
+        }   
+    }
+
+    .inset-mod-1 {
+       left: -4.16666667%;
+       z-index: 1;
+    }
+    @media screen and (max-width: 767px) {
+        .inset-mod-1 {
+            left: 30.833333%
+       }   
+    }
+
+    /**/
+    .off-top-1 {
+        margin-top:25%;
+    }
+    @media screen and (max-width: 767px) {
+     .off-top-1 {
+        margin-top:-21%;
+    }   
+    }
+
+
+    .off-top-2 {
+        margin-top:22%;
+    }
+
+    /* ===============  
+    Text Positioning
+    =============== */
+    .cmp-text {
+       position: absolute;
+       z-index: 1;
+    }
+
+    .cmp-text p, .cmp-text-2 p {
+       font-size: 2.35vw;
+       font-family: "FuturaPTMedium-Reg", sans-serif;
+       line-height: 4vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        .cmp-text p, .cmp-text-2 p {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .cmp-text p, .cmp-text-2 p {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .cmp-text p, .cmp-text-2 p {
+            font-size: 17px;
+            line-height: 25px;
+        }
+    }
+
+
+    .cmp-text a, .cmp-text-2 a {
+        text-decoration: none;
+        border-bottom: 4px solid #242acc;
+        cursor: default;
+        text-transform: none;
+    }
+
+    span.line-1 {
+        padding-left: 9vw;
+    }
+    span.line-2 {
+        padding-left: 16vw;
+    }
+
+    .cmp-text-non {
+        float: right;
+        margin-top: 5rem;
+    }
+     @media screen and (max-width: 768px) {
+        .cmp-text-non {
+            margin-top: 2rem;
+        }
+     }
+     @media screen and (max-width: 767px) {
+        .cmp-text-non {
+            float: left;
+            margin-left: -40px;
+            margin-bottom: -15px;
+        }
+     }
+
+     .cmp-text-0 {
+        bottom: 0;
+        right: 32%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .cmp-text-0 {
+            bottom: 7%;
+            right: 30%;
+        }
+     }
+
+     @media screen and (max-width: 767px) {
+        .cmp-text-0 {
+            bottom: -3%;
+            right: 16%;
+            width: 100%;
+        }
+     }
+
+    .cmp-text-1 {
+        top: 10%;
+        left: 46%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .cmp-text-1 {
+            position: relative;
+            left: 8%;
+        }
+     }
+
+    .cmp-text-2{
+        top: 30%;
+        left: 8%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .cmp-text-2 {
+            top: 23%;
+            left: 3%;
+        }
+     }
+
+    .cmp-text-3 {
+        top: 5%;
+        left: 25%;
+    }
+     @media screen and (max-width: 768px) {
+         .cmp-text-3 {
+            left: 4%;
+        }
+     }
+     @media screen and (max-width: 767px) {
+         .cmp-text-3 {
+            left: 8%;
+            top:0;
+            position: relative;
+        }
+     }
+    .cmp-text-4{
+        top:35%;
+        right: 1%;
+    }
+    @media screen and (max-width: 767px) {
+         .cmp-text-4 {
+            color: #fff;
+            top:30%;
+            left: 3%;
+        }
+     }
+
+    .cmp-text-5 {
+        top: 20%;
+        left: 24.5%;
+    }
+     @media screen and (max-width: 768px) {
+        .cmp-text-5 {
+            left: 5.5%;
+        }
+     }
+     @media screen and (max-width: 767px) {
+        .cmp-text-5 {
+            top: 94%;
+            left: 7.5%;
+        }
+     }
+
+     .vertical-text {
+        transform: rotate(90deg);
+        transform-origin: bottom right 0;
+     }
+
+     .animatable {
+  
+  /* initially hide animatable objects */
+  visibility: hidden;
+  
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  } 100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/* VISIBILITY
+   ----------------------------- */
+
+@media (min-width: 1200px) {
+    .vs-lg {
+        display: block!important
+    }
+    .hd-lg {
+        display: none!important
+    }
+}
+@media (max-width: 767px) {
+    .hd-xs {
+        display: none!important
+    }
+    .vs-xs {
+        display: block!important
+    }
+}
+@media (min-width: 768px) {
+    .xs-only {
+        display: none!important
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .hd-sm {
+        display: none!important
+    }
+    .vs-sm {
+        display: block!important
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hd-md {
+        display: none!important
+    }
+    .vs-md {
+        display: block!important
+    }
+}
+
+
+</style>
+
+<div class="template_aday">
+
+    <!-- Heading, Logo and Shop Collection -->
+    <article class="grid-container custom-width mod-header-tier">
+        <section class="layer">
+            <div class="beam ady-logo animatable fadeInUp">
+                <img src="/pws/client/images/aday/feature/aday-logo-min.png" class="img-responsive">
+                <p>Each day brings new adventures; we're born to explore. This season, we have worked with London and New York-based label ADAY to pick a capsule collection of technical staples to work around your everyday.</p>
+
+                <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+                    <button class="ghost ghost-electric">SHOP THE COLLECTION</button>
+                </a>
+            </div>
+        </section>
+    </article>
+
+
+    <!-- Mod Edit 1 -->
+    <article class="grid-container custom-width mod-ady-ed1">
+        <section class="layer">
+        	<div class="beam mod-ady-lg">
+             <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+        		<img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit1-min.jpg" class="img-responsive">
+            </a>        			
+            </div>
+            <div class="cmp-text cmp-text-0 vertical-text ">
+                <p class="animatable fadeInUp">I wouldn’t say we’re an athleisure brand.</p>
+            </div>
+        </section>
+    </article>
+
+    <!-- Mod Edit 2 -->
+    <article class="grid-container custom-width mod-ady-ed2">
+        <section class="layer">
+
+            <div class="cmp-text cmp-text-1">
+                <p class="animatable fadeInUp">What we're trying to <a href="">achieve</a><br>
+                    <span class="line-1">is the complete opposite of that.</span>
+                </p>
+            </div>
+
+        	<div class="beam mod-ady-md">
+             <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+                <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit2-min.jpg" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="beam mod-ady-sml inset-mod-1 off-top-1">
+             <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+              <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit2-1-min.jpg" class="img-responsive">
+              </a>
+          </div>
+      </section>
+  </article>
+
+  <!-- Mod Edit 3 -->
+  <article class="grid-container custom-width mod-ady-ed3">
+    <section class="layer">
+            <div class="cmp-text cmp-text-2">
+                <p class="animatable fadeInUp">We love normal pants, T-shirts,<br>
+                    <span class="line-1">and sweatshirts. ADAY is designed<span><br>
+                    to feel like your normal wardrobe,
+                    <br><br>
+                    <span class="line-1">only with different <a href="">qualities</a>.</span>               
+                </p>
+            </div>
+        <div class="beam mod-ady-lg">
+         <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+            <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit3-min.jpg" class="img-responsive">
+            </a>
+        </div>
+    </section>
+</article>
+
+<!-- Mod Edit 4 -->
+<article class="grid-container custom-width mod-ady-ed4">
+    <section class="layer">
+
+        <div class="cmp-text cmp-text-3">
+                <p class="animatable fadeInUp">We hope to <a href="">inspire</a> people<br>
+                    <span class="line-1">to consume better and think more</span>
+                </p>
+        </div>
+
+        <div class="beam mod-ady-sml overset-mod-1 off-top-2">
+         <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+            <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit4-1-min.jpg" class="img-responsive">
+        </a>
+        </div>
+
+        <div class="beam mod-ady-md mob-flex">
+         <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+            <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit4-min.jpg" class="img-responsive">
+        </a>
+                <div class="cmp-text-2 cmp-text-non">
+                    <p class="animatable fadeInUp">about the things they <a href="">invest</a> in.</p>
+                </div>
+        </div>
+
+    </section>
+</article>
+
+<!-- Mod Edit 5 -->
+<article class="grid-container custom-width mod-ady-ed5">
+    <section class="layer">
+
+        <div class="cmp-text cmp-text-4">
+                 <p class="animatable fadeInUp">As women,<br>
+                    <span class="line-1">we should do things we</span><br>
+                    want to do well,<br>
+                    rather than try and do everything.
+                </p>
+        </div>
+
+        <div class="beam mod-ady-xl">
+         <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+        <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit5-min.jpg" class="img-responsive">
+        </a>
+    </div>
+</section>
+</article>
+
+<!-- Mod Edit 6 -->
+<article class="grid-container custom-width mod-ady-ed6">
+    <section class="layer">
+
+        <div class="cmp-text cmp-text-5">
+                <p class="animatable fadeInUp">Sure,<br>
+                    there is pressure to have<br>
+                    <span class="line-1">it all together, but it</span>
+                    <br><br>
+                    is <a href="">okay</a> if you<br>
+                    <span class="line-2">don't sometimes.</span>  
+                </p>
+        </div>
+
+       <div class="beam mod-ady-lg">
+        <a href="/category/womens/ADAY-Curated-by-Jigsaw">
+          <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-edit6-min.jpg" class="img-responsive">	
+          </a>
+      </div>
+  </section>
+</article>
+
+<!-- Mod Blog -->
+<article class="grid-container custom-width mod-ady-blog">
+    <section class="layer">
+       <div class="beam mod-blog">
+          <img src="https://jigsaw.btxmedia.com/pws/client/images/aday/feature/aday-blog.jpg" class="img-responsive">	
+      </div>
+      <div class="beam mod-blog-copy">
+        <div>
+          <h3>"We want to set a new standard<br>for wardrobe staples."</h3>
+          <p>Meet the women behind the quotes, co-founders<br>Nina Faulhaber and Meg He.</p>
+          <a href="/blog/home/a-life-in-aday.html">
+          <button class="ghost ghost-electric hd-xs">READ THE BLOG</button>
+          </a>
+      </div>      
+        </div>
+        <div class="mob-btn-layer vs-xs hd-lg hd-md hd-sm">
+        <a href="/blog/home/a-life-in-aday.html">
+            <button class="ghost ghost-electric">READ THE BLOG</button>
+         </a>   
+          </div>
+  </section>
+</article>
+
+
+</div>
+<script type="text/javascript">
+    // Trigger CSS animations on scroll
+
+jQuery(function($) {
+  
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.size() == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+        $animatables.each(function(i) {
+       var $animatable = $(this);
+            if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+            }
+    });
+
+    };
+  // Hook doAnimations on scroll, and trigger a scroll
+    $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
+</script>
+
+</body>
+</html>
